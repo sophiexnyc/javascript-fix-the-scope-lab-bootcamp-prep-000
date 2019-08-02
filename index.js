@@ -15,10 +15,10 @@ function add2(n) {
   return n + two;
 }
 
-function theFunk{
-	return function funkyFunction{
-	var funkyfunction = 'function';
-	return 'FUNKY!';
-	}
+var funkyFunction = function(){
+  return function(){
+    return "FUNKY!"
+  }
 }
-var theFunk = theFunk();
+var theFunk = funkyFunction()
+theFunk();
